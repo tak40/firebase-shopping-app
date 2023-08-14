@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F1F5F9; /* Updated Background Color */
+    color: #333333; /* Updated Text Color */
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: #333333;
+    background-color: #E9EFF4; /* Slightly different input background for distinction */
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF; /* White text for contrast */
+    background-color: #2E5D7B; /* Primary Color */
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #FFC857; /* Secondary Color */
+}
+
+button:hover {
+    background-color: #50A2A7; /* Alternate/Support Color */
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 2px solid #2E5D7B; 
+    outline-offset: 2px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: #E9EFF4; /* Uniform background with input for list items */
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    flex-grow: 1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: #B4C5D9; /* Slightly darkened version of the background color */
+    cursor: pointer;
+}
+
+ul li:focus {
+    outline: 2px solid #2E5D7B; /* Using primary color for focus */
+    outline-offset: 2px; 
+}
+
+ul li:active {
+    transform: scale(0.95);
+}
+
+.separator {
+    height: 2px;
+    background-color: #2E5D7B; /* Using primary color for separator */
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.empty-list-message {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
